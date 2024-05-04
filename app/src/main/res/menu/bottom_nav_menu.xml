@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Профиль"
+        android:icon="@drawable/profile"
+        android:iconTint="@color/black"
+        android:id="@+id/profile"/>
+    <item android:title="План"
+        android:icon="@drawable/plan"
+        android:iconTint="@color/black"
+        android:id="@+id/plan"/>
+    <item android:title="Поиск"
+        android:iconTint="@color/black"
+        android:icon="@drawable/search"
+        android:id="@+id/search"/>
+    <item android:title="Избранное"
+        android:icon="@drawable/favorite"
+        android:iconTint="@color/black"
+        android:id="@+id/favorite"/>
+</menu>
