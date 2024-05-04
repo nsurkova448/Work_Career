@@ -23,7 +23,7 @@ public class HubActivity extends AppCompatActivity {
             if (itemId == R.id.profile) {
                 replaceFragment(new ProfileFragment());
             } else if (itemId == R.id.plan) {
-                replaceFragment(new PlanFragment());
+                replaceFragment(new Test());
             } else if (itemId == R.id.search) {
                 replaceFragment(new SearchFragment());
             } else if (itemId == R.id.favorite) {
