@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FavoriteFragment"
-    android:background="@drawable/gradient_background">
+    android:orientation="vertical">
 
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFavoriteJobs"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".FavoriteFragment"
-        android:background="@drawable/gradient_background">
+        android:layout_height="match_parent" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_favorite_jobs"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
-
-    </RelativeLayout>
-
-</FrameLayout>
+</LinearLayout>

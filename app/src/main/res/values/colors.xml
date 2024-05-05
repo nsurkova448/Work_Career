@@ -11,10 +11,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="bottom_nav_selected">#9DF3C4</color>
     <color name="bottom_nav_unselected">#99E1E5</color>
-    <color name="color1">#227CC3</color>
-    <color name="color2">#2EB834</color>
-    <color name="color3">#ED1B0B</color>
-    <color name="color4">#F1DA12</color>
-    <color name="color5">#9617AC</color>
+    <color name="green1">#62D2A2</color>
 
 </resources>

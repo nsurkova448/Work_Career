@@ -1,40 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Ввод цели и описания -->
-    <EditText
-        android:id="@+id/etGoalTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Название цели"
-        android:gravity="center"
-        android:textColor="@color/black"/>
-
-    <EditText
-        android:id="@+id/etGoalDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Описание цели"
-        android:textColor="@color/black"
-        android:gravity="center"/>
-
-    <!-- RecyclerView для списка шагов -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvSteps"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
-    <!-- FloatingActionButton для добавления нового шага -->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabAddStep"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:src="@drawable/ic_add" />
+        android:text="Карьерная цель"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/career_goal_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите свою карьерную цель"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:gravity="top"
+        android:background="@color/green1"
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Шаги для достижения цели"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/steps_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green1"
+        android:gravity="top"
+        android:hint="Введите шаги для достижения цели"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/save_plan_button"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:backgroundTint="@color/green"
+            android:text="Сохранить план"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/edit_plan_button"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:backgroundTint="@color/green"
+            android:text="Редактировать"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/delete_plan_button"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginStart="2dp"
+            android:backgroundTint="@color/green"
+            android:text="Удалить"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        />
+
+    <TextView
+        android:id="@+id/progress_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <ListView
+        android:id="@+id/plan_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_marginTop="16dp" />
 
 </LinearLayout>
