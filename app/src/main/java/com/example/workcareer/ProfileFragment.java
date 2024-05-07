@@ -214,17 +214,14 @@ public class ProfileFragment extends Fragment {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == REQUEST_READ_EXTERNAL_STORAGE) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                // Разрешение предоставлено
                 loadProfileData();
             } else {
-                // Разрешение отклонено
-                // Здесь можно показать сообщение пользователю или отключить функциональность
             }
         } else if (requestCode == REQUEST_CAMERA_PERMISSION) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 takePhoto();
             } else {
-                // Разрешение на использование камеры отклонено
+
             }
         }
     }

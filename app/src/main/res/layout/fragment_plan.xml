@@ -95,8 +95,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+<<<<<<< HEAD
         android:max="100"
         />
+=======
+        android:max="100" />
+>>>>>>> jopa
 
     <TextView
         android:id="@+id/progress_text_view"
